@@ -18,7 +18,6 @@ class MainActivity : ComponentActivity() {
         CoroutineScope(Dispatchers.IO).launch{
             DataManager.loadAssetsFromFile(applicationContext);
         }
-        DataManager.loadAssetsFromFile(this)
         setContent {
             App();
         }
